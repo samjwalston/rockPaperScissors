@@ -1,0 +1,55 @@
+body {
+		height: 100%;
+		width: 100%;
+		margin-top: 0px;
+		font-family: arial;
+	}
+
+	#input {
+		background-image: url("file:///Users/Sam/Downloads/Rock_Paper_Scissors__Wallpaper_by_Mattie_P.jpg");
+		background-size: 670px 419px;
+		height: 419px;
+		width: 670px;
+		margin: 0px auto;
+	}
+
+	.buttons {
+		height: 142px;
+		width: 171px;
+		display: inline-block;
+		margin-top: 133px;
+		margin-left: 11px;
+		border-radius: 2px;
+		opacity: 0;
+	}
+
+	#rock {
+		margin-left: 67px;
+	}
+
+	#output {
+		position: relative;
+		height: 100px;
+		width: 670px;
+		margin: 0px auto;
+		margin-top: -46px;
+	}
+
+	#score {
+		height: 50px;
+		width: 300px;
+		margin: 0px auto;
+		margin-top: 20px;
+		text-align: center;
+		font-size: 45px;
+		padding-bottom: ;
+	}
+
+	#winner {
+		height: 50px;
+		width: 400px;
+		margin: 0px auto;
+		margin-top: 15px;
+		text-align: center;
+		font-size: 45px;
+	}
