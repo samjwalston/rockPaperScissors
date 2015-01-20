@@ -58,6 +58,17 @@ function rockPaperScissors(userChoice){
 			computerChoice = "rock";
 		};
 	};
+	function patternAACAA(){
+		if(ucArray[ucaLength - 1] == "rock"){
+			computerChoice = "rock";
+		}
+		else if(ucArray[ucaLength - 1] == "paper"){
+			computerChoice = "paper";
+		}
+		else if(ucArray[ucaLength - 1] == "scissors"){
+			computerChoice = "scissors";
+		};
+	};
 	function patternABAB(){
 		if(ucArray[ucaLength - 1] == ucArray[ucaLength - 3]){
 			if(ucArray[ucaLength - 2] == ucArray[ucaLength - 4]){
@@ -100,7 +111,12 @@ function rockPaperScissors(userChoice){
 		patternRandom();
 	}
 	else if(ucArray[ucaLength - 1] == ucArray[ucaLength - 2]){
-		patternAA();
+		if(ucaLength > 4 && (ucArray[ucaLength - 4] == ucArray[ucaLength - 5]) && (ucArray[ucaLength - 1] !== ucArray[ucaLength - 3])){
+			patternAACAA();
+		}
+		else{
+			patternAA();
+		};
 	}
 	else if(ucArray[ucaLength - 1] == ucArray[ucaLength - 3]){
 		patternABAB();
